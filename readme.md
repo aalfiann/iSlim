@@ -11,8 +11,8 @@ Now still alpha.
 
 The Differences
 ---------------
-iSlim is forged from [SlimMVC](https://github.com/revuls/SlimMVC).
-SlimMVC still not better to use, there is so many tweaks to do, so I will make it better in this project.
+- iSlim is forged from [SlimMVC](https://github.com/revuls/SlimMVC). <br>Because SlimMVC still so many tweaks to do, so I will make it better in this project.
+- Add some stuff that makes more easy for development
 
 Getting Started
 ---------------
