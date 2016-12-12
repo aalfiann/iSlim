@@ -7,7 +7,12 @@ iSlim use the PHP microframework [Slim Framework](http://www.slimframework.com/)
 
 Status Development
 ---------------
-iSlim is forged from SlimMVC and still alpha.
+Now still alpha.
+
+The Differences
+---------------
+iSlim is forged from [SlimMVC](https://github.com/revuls/SlimMVC).
+SlimMVC still not better to use, there is so many tweaks to do, so I will make it better in this project.
 
 Getting Started
 ---------------
@@ -44,7 +49,7 @@ class Stuff {
     protected $core;
 
     function __construct() {
-        $this->core = Core::getInstance();
+        $this->core = \lib\Core::getInstance();
     }
 
     // Get all stuff
