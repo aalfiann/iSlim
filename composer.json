@@ -1,7 +1,7 @@
 {
     "name":"aalfiann/iSlim",
     "type":"framework",
-    "description":"MVC for the PHP microframework Slim",
+    "description":"MVC for the PHP microframework Slim v2.x",
     "keywords":["microframework", "rest", "router", "mvc"],
     "homepage":"https://github.com/aalfiann/iSlim",
     "license":"MIT",
