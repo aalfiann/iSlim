@@ -12,7 +12,7 @@ class Starter {
 		$this->core = \lib\Core::getInstance();
 	}
 	
-	// Get all stuff
+	// Get all data from database mysql
 	public function getAll() {
 		$r = array();		
 
