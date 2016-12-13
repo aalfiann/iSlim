@@ -37,14 +37,19 @@ Here we have the core classes of the connection with the DB
 ### models/
 
 Add the model classes here.
-We are using PDO for the Database.
+We are using PDO MySQL for the Database.
 
 Example of class:
 
-Stuff.php
+Starter.php
 
 ```php
-class Stuff {
+
+namespace models;
+use lib\Core;
+use PDO;
+
+class Starter {
 
     protected $core;
 
@@ -52,20 +57,20 @@ class Stuff {
         $this->core = \lib\Core::getInstance();
     }
 
-    // Get all stuff
-    public function getAllStuff() {
-        $r = array();
+    // Get all data from database mysql
+	public function getAll() {
+		$r = array();		
 
-        $sql = "SELECT * FROM stuff";
-        $stmt = $this->core->dbh->prepare($sql);
+		$sql = "SELECT * FROM user";
+		$stmt = $this->core->dbh->prepare($sql);		
 
-        if ($stmt->execute()) {
-            $r = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-        } else {
-            $r = 0;
-        }
-        return $r;
-    }
+		if ($stmt->execute()) {
+			$r = $stmt->fetchAll(PDO::FETCH_ASSOC);		   	
+		} else {
+			$r = 0;
+		}		
+		return $r;
+	}
 }
 ```
 
