@@ -72,6 +72,15 @@ class Starter {
 		}		
 		return $r;
 	}
+
+    public function set() {
+        return array(
+			'hello' => "Hello World!!!",
+			'description1' => "Use this document as a way to quickly start any new project.",
+			'description2' => "All you get is this text and a mostly barebones HTML document.",
+			'author' => "iSlim is forged by M ABD AZIZ ALFIAN"
+			);
+    }
 }
 ```
 
