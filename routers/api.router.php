@@ -1,13 +1,7 @@
 <?php
 
-// GET index route
+// GET api user route
 $app->get('/api/user', function () use ($app) {
-    //$oStuff = new models\Stuff();
-    //$hello = $oStuff->getAllStuff();
-    //$items = array();
-    //foreach ($hello as $doc){
-    //    $items[] = $doc;        
-    //}  
-    //$app->render('index.html', array('items' => $items));
+    $app->response->setStatus(200);
     echo 'tester api';
 });

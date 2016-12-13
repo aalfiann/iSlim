@@ -4,7 +4,7 @@ namespace models;
 use lib\Core;
 use PDO;
 
-class Stuff {
+class Starter {
 
 	protected $core;
 
@@ -13,7 +13,7 @@ class Stuff {
 	}
 	
 	// Get all stuff
-	public function getAllStuff() {
+	public function getAll() {
 		$r = array();		
 
 		$sql = "SELECT * FROM user";
@@ -27,7 +27,7 @@ class Stuff {
 		return $r;
 	}
 
-    public function setStuff() {
+    public function set() {
         return "hello world!!!";
     }
 }
