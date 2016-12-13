@@ -4,7 +4,12 @@
 $app->get('/', function () use ($app) {
     $oStuff = new models\Starter();
     $hello = $oStuff->set();
-    $app->render('frontend/index.html', array('hello' => $hello));
+    $app->render('frontend/index.html', array(
+        'hello' => $hello['hello'],
+        'description1' => $hello['description1'],
+        'description2' => $hello['description2'],
+        'author' => $hello['author']
+    ));
 });
 
 // GET example loop route
