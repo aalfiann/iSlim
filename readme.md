@@ -87,26 +87,33 @@ It is very important that the names of the files inside this folder follow this 
 
 Example of router file:
 
-stuff.router.php
+index.router.php
 
 ```php
-// Get stuff
-$app->get('/stuff', function () use ($app) {
-    echo 'This is a GET route';
+// GET example index route
+$app->get('/', function () use ($app) {
+    $oStuff = new models\Starter();
+    $hello = $oStuff->set();
+    $app->render('frontend/index.html', array(
+        'hello' => $hello['hello'],
+        'description1' => $hello['description1'],
+        'description2' => $hello['description2'],
+        'author' => $hello['author']
+    ));
 });
 
 //Create user
-$app->post('/stuff', function () use ($app) {
+$app->post('/user', function () use ($app) {
     echo 'This is a POST route';
 });
 
 // PUT route
-$app->put('/stuff', function () {
+$app->put('/user', function () {
     echo 'This is a PUT route';
 });
 
 // DELETE route
-$app->delete('/stuff', function () {
+$app->delete('/user', function () {
     echo 'This is a DELETE route';
 });
 ```
