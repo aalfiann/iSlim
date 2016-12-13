@@ -2,18 +2,13 @@ iSlim
 =======
 
 I call this "iSlim" because I heart [Slim Framework](http://www.slimframework.com/).<br>
-iSlim is the easiest and flexible way to create your PHP application using a MVC pattern.<br>
-iSlim use the PHP microframework [Slim Framework](http://www.slimframework.com/) version 2.x and use the best practices collected in the slim community.<br>
-Why Slim version 2.x? Because this is for someone who still want to run Slim MVC in PHP 5.3.
+iSlim is the easiest and flexible way to create your PHP application using a MVC pattern and Bootstrap 4.<br>
+Why iSlim use Slim version 2.x? Because this is for someone who still want to run Slim MVC in PHP 5.3.
 
 Status Development
 ---------------
 Now still alpha.
 
-The Differences
----------------
-- iSlim is forged from [SlimMVC](https://github.com/revuls/SlimMVC). <br>Because SlimMVC still so many tweaks to do, so I will make it better in this project.
-- Add some stuff that makes more easy for development
 
 Getting Started
 ---------------
