@@ -1,13 +1,11 @@
 iSlim
 =======
+[![Travis branch](https://img.shields.io/travis/rust-lang/rust/master.svg)](https://github.com/aalfiann/iSlim)
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/aalfiann/iSlim/blob/master/license.md)
 
 I call this "iSlim" because I heart [Slim Framework](http://www.slimframework.com/).<br>
 iSlim is the easiest and flexible way to create your PHP application using a MVC pattern and Bootstrap 4.<br>
 Why iSlim use Slim version 2.x? Because this is for someone who still want to run Slim MVC in PHP 5.3.
-
-Status Development
----------------
-Now still alpha.
 
 
 Getting Started
